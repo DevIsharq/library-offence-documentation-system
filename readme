@@ -1,0 +1,33 @@
+##################################################
+Guide for library offense documentation system   #
+##################################################
+
+-Install XAAMP 
+-start apache server
+-start mysql server
+
+##################################################
+Click on `Admin` that's in thesame row with mysql#
+or copy => http://localhost/phpmyadmin/ and past #
+it in any of your browser                        #
+##################################################
+
+Your Database name is: `library_system`
+Make sure you create the database as `library_system` before you  import the database file
+
+##################################################
+
+Admin User credentials for login:
+Email: admin@gmail.com
+Password: 12345
+
+##################################################
+
+Student User credentials for login:
+Email: jibrin@gmail.com
+Password: 12345
+
+
+##################################################
+        NOTE: That all passwords are 1-5         #
+##################################################
