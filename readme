@@ -1,33 +1,38 @@
-##################################################
-Guide for library offense documentation system   #
-##################################################
+# Library Offense Documentation System — Readme
 
--Install XAAMP 
--start apache server
--start mysql server
+## Prerequisites
 
-##################################################
-Click on `Admin` that's in thesame row with mysql#
-or copy => http://localhost/phpmyadmin/ and past #
-it in any of your browser                        #
-##################################################
+- XAMPP installed (includes Apache, PHP, MySQL/phpMyAdmin)
+- A modern web browser
 
-Your Database name is: `library_system`
-Make sure you create the database as `library_system` before you  import the database file
+## Setup
 
-##################################################
+1. Place the project folder in XAMPP's web root (e.g., `C:/xampp/htdocs/lods`).
+2. Open the XAMPP Control Panel and start **Apache** and **MySQL**. - You can also click **Admin** next to MySQL or open: `http://localhost/phpmyadmin/`
+3. In phpMyAdmin create a new database named: `library_system` - Recommended collation: `utf8mb4_general_ci`
+4. Import the provided SQL file (e.g., `database.sql`) into the `library_system` database via phpMyAdmin → Import.
 
-Admin User credentials for login:
-Email: admin@gmail.com
-Password: 12345
+## Application URL
 
-##################################################
+- Open in your browser: `http://localhost/lods/` (adjust path if different)
 
-Student User credentials for login:
-Email: jibrin@gmail.com
-Password: 12345
+## Default Credentials
 
+Admin
 
-##################################################
-        NOTE: That all passwords are 1-5         #
-##################################################
+- Email: `admin@gmail.com`
+- Password: `12345`
+
+Student
+
+- Email: `jibrin@gmail.com`
+- Password: `12345`
+
+Note: These default passwords are insecure. Change them after first login using the app's user management or by updating the database.
+
+## Troubleshooting
+
+- If phpMyAdmin is unreachable, ensure Apache and MySQL are running in XAMPP.
+- If import fails, check the SQL file for size limits or upload settings in phpMyAdmin.
+
+That's all — the app should be ready after the above steps.
